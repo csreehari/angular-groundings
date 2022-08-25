@@ -1,0 +1,31 @@
+<div class="row flex ai-header">
+  <div class="col-md-1 mx-4 py-3">
+    <img src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png" width="150" height="40" title="Home"
+                                                                                    alt="Home" class="title">
+  </div>
+  <div class="col-md-10 py-3 px-4">
+    <p>
+      <strong><h2 class="app-title">Welcome to Angular Incubation</h2></strong>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <ul class="nav flex-column navbar-expand-md container-fluid" style="background-color: #edf0f2; color: #444;">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" [routerLink]="['basics']">Angular Basics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['intermediate']">Intermediate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Advanced</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-10">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+

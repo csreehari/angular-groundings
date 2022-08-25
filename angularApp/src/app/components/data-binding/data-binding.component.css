@@ -1,0 +1,29 @@
+.bindings *{
+    display: flex;
+    padding: 0.5em;
+  }
+
+  img {
+    border-radius: 2%;
+  }
+
+  .txt-green {
+    color:green;
+  }
+
+  .txt-red {
+    color:red;
+  }
+
+  .txt-blue {
+    color:blue;
+  }
+
+  .txt-lower {
+    text-transform: lowercase;
+  }
+
+  .txt-upper {
+    text-transform: uppercase;
+  }
+

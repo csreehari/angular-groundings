@@ -1,0 +1,62 @@
+<p class="px-md-4">
+  <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="collapse" (click)="getInnerHtml()" data-bs-target="#collapseConversation" aria-expanded="false" aria-controls="collapseConversation">
+    Conversational Pipes
+  </button>
+</p>
+<div class="collapse" id="collapseConversation">
+  <div class="card card-body" id="bg-gradient-secondary " #codeExamples>
+    <p><strong>Me: </strong><code>{{ 'Don\'t mess with the Earphones!!!' | uppercase }}</code></p>
+
+    <p><strong>Me: </strong> <code>{{ 'I shelled out a lot for them.' | lowercase }}</code></p>
+
+    <p><strong>Friend: </strong> Is it? How much did it cost you? </p>
+
+    <p><strong>Me: </strong> Exactly <code>{{ earBudsCost | currency : 'INR' }}</code></p>
+
+    <p><strong>Friend: </strong> Wow! When did you buy them? </p>
+
+    <p><strong>Me:</strong> On <code>{{ purchaseDate | date : 'shortDate' }}</code></p>
+
+    <p><strong>Friend:</strong> I am confused with the date, which month was it?</p>
+
+    <p><strong>Me:</strong> Ufff! <code>{{ purchaseDate | date : 'd\'th\'  MMM' }}</code>, to be more precise - it's on  <code>{{ purchaseDate | date : 'longDate' }}</code></p>
+
+    <p><strong>Friend:</strong> Does it seem a reasonable price for the quality.</p>
+
+    <p><strong>Me:</strong> But it cost me nearly <code>{{ 0.1036 | percent: '2.2-2' }}</code> of my salary, which is more than the percentage of salary left by the end of the month.</p>
+
+    <p><strong>Friend:</strong> Interesting, here is my long-standing question that I wanted to ask, what is your salary structure look like?</p>
+
+    <p><strong>Me:</strong> It is actually confidential, but since you are my best friend, this is it  <code>{{ salarySlip.salaryStructure | json }}</code></p>
+
+    <p><strong>Friend:</strong> Damn! come back to this normal world. You are not coding now, Can you please depict in a normal human readable language that I speak?</p>
+
+    <p>
+      <strong>Me: </strong>Hmm...! Here it is.
+    </p>
+
+    <table class="table table-striped table-bordered">
+      <thead>
+        <th>Salary Component</th>
+        <th>Amount</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of salarySlip.salaryStructure">
+          <td><code>{{ item.component | titlecase }}</code></td>
+          <td class="mx-md-8" [dir]="direction"><code>{{ item.componentValue | currency:'INR':true:'4.2-2' }}</code></td>
+      </tbody>
+    </table>
+
+    <p><strong>Friend: </strong>Thanks, much better now.</p>
+    <p><strong>Me:</strong> Do you know that as per your salary you come under the <code>{{ 0.20 | percent: '2.0-0' }} </code> <code [innerHTML]="'Income tax slab' | italicCase"></code> </p>
+
+    <p><strong>Friend:</strong> Oh really! Do you know that I guessed that before you could tell me. ha ha!!</p>
+
+    <!-- <pre class="lang- prettyprint">
+      <code class="animated fadeIn">
+        {{codeExamples}}
+      </code>
+    </pre> -->
+  </div>
+</div>
+

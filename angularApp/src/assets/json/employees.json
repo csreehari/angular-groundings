@@ -1,0 +1,182 @@
+[
+  {
+    "location": {
+      "city": "Charlotte",
+      "state": "NC",
+      "zipCode": "28277"
+    },
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "department": "Technology",
+    "salary": "$100000"
+  },
+  {
+    "location": {
+      "city": "Charlotte",
+      "state": "NC",
+      "zipCode": "28012"
+    },
+    "id": 2,
+    "firstName": "William",
+    "lastName": "Smith",
+    "department": "Production",
+    "salary": "$10,000,000"
+  },
+  {
+    "location": {
+      "city": "Boston",
+      "state": "MA",
+      "zipCode": "02333"
+    },
+    "id": 3,
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "department": "Sports",
+    "salary": "$9,000,000"
+  },
+  {
+    "location": {
+      "city": "Waldham",
+      "state": "MA",
+      "zipCode": "02323"
+    },
+    "id": 4,
+    "firstName": "Dean",
+    "lastName": "Smith",
+    "department": "Technology",
+    "salary": "$120,000"
+  },
+  {
+    "location": {
+      "city": "Greenville",
+      "state": "NC",
+      "zipCode": "29011"
+    },
+    "id": 5,
+    "firstName": "Jeff",
+    "lastName": "Stricklin",
+    "department": "Technology",
+    "salary": "$130,000"
+  },
+  {
+    "location": {
+      "city": "Greenville",
+      "state": "SC",
+      "zipCode": "26000"
+    },
+    "id": 6,
+    "firstName": "Brad",
+    "lastName": "Johnson",
+    "department": "HR",
+    "salary": "$50000"
+  },
+  {
+    "location": {
+      "city": "Charleston",
+      "state": "SC",
+      "zipCode": "26011"
+    },
+    "id": 7,
+    "firstName": "Kulneet",
+    "lastName": "Chhabra",
+    "department": "HR",
+    "salary": "$50000"
+  },
+  {
+    "location": {
+      "city": "Greenville",
+      "state": "SC",
+      "zipCode": "26000"
+    },
+    "id": 8,
+    "firstName": "Manoj",
+    "lastName": "Tiwari",
+    "department": "HR",
+    "salary": "$40,000"
+  },
+  {
+    "location": {
+      "city": "Charleston",
+      "state": "SC",
+      "zipCode": "26011"
+    },
+    "id": 9,
+    "firstName": "Harika",
+    "lastName": "Akula",
+    "department": "HR",
+    "salary": "$40,000"
+  },
+  {
+    "location": {
+      "city": "Greenville",
+      "state": "NC",
+      "zipCode": "29011"
+    },
+    "id": 10,
+    "firstName": "Doug",
+    "lastName": "Johns",
+    "department": "Sales",
+    "salary": "$50000"
+  },
+  {
+    "location": {
+      "city": "Boston",
+      "state": "MA",
+      "zipCode": "02333"
+    },
+    "id": 11,
+    "firstName": "Michael",
+    "lastName": "Clark",
+    "department": "Sports",
+    "salary": "$540,000"
+  },
+  {
+    "location": {
+      "city": "Waldham",
+      "state": "MA",
+      "zipCode": "02323"
+    },
+    "id": 12,
+    "firstName": "Scott",
+    "lastName": "Clark",
+    "department": "Sales",
+    "salary": "$54,000"
+  },
+  {
+    "location": {
+      "city": "Waldham",
+      "state": "MA",
+      "zipCode": "02333"
+    },
+    "id": 13,
+    "firstName": "Raghavendra",
+    "lastName": "Rao",
+    "department": "Marketing",
+    "salary": "$50000"
+  },
+  {
+    "location": {
+      "city": "Houston",
+      "state": "TX",
+      "zipCode": "02323"
+    },
+    "id": 14,
+    "firstName": "Aleksandr",
+    "lastName": "Nikulin",
+    "department": "Technology",
+    "salary": "$50000"
+  },
+  {
+    "location": {
+      "city": "Charlotte",
+      "state": "NC",
+      "zipCode": "28012"
+    },
+    "id": 15,
+    "firstName": "Bharat",
+    "lastName": "Vadlamannati",
+    "department": "Marketing",
+    "salary": "$120000"
+  }
+]

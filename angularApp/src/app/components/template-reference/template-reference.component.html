@@ -1,0 +1,36 @@
+<p>Template Reference Variable Demo</p>
+<div class="container container-fluid">
+  <div class="row form-group justify-content-around">
+    <p>TRV for input</p>
+    <div class="col-6">
+      <input type="text" #txtValue />
+    </div>
+    <div class="col-6">
+      <button type="submit" class="btn btn-secondary btn-sm" (click)="onSubmitClick(txtValue)">Submit</button>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-sm-4">
+      <p *ngIf="txtValue">{{spanValue}}</p>
+    </div>
+  </div>
+
+  <div class="row form-group">
+    <p>TRV for select</p>
+    <div class="col-sm-4">
+      <select #ddlList (change)="onddlListChange(ddlList)">
+        <option id="0" value="select">Select</option>
+        <option id="1" value="volvo">Volvo</option>
+        <option id="2" value="mercedes">Mercedes</option>
+        <option id="3" value="audi">Audi</option>
+        <option id="4" value="bmw">BMW</option>
+      </select>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-sm-12 align-self-center">
+      <p *ngIf="selectedData">{{selectedData}}</p>
+    </div>
+  </div>
+</div>
+

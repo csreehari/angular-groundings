@@ -1,0 +1,158 @@
+
+<div class="accordion" id="accordionExample2">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneOne" aria-expanded="true" aria-controls="collapseOneOne">
+        <code>{{<span>Interpolation</span>}}</code>
+      </button>
+    </h2>
+    <div id="collapseOneOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+        <div class="bindings">
+          <p>Using Interpolation expression for accessing message property value: {{message}}</p>
+          <p>Calculated value of interpolation expression: {{30+50-10}}</p>
+          <p>{{'This is an example of concatenating a string using interpolation expression by: ' + userName}}</p>
+          <p>Conditional evaluation example using interpolation expression: </p>
+          <p>{{userName != null ? 'The username is ' + userName : 'The username is null'}}</p>
+          <p>Length of the username is {{userName.length}}</p>
+          <p>Username in uppercase {{userName.toUpperCase()}}</p>
+          <p>Username in lowercase {{userName.toLowerCase()}}</p>
+          <p>Binding value to textbox using interpolation: </p>
+          <input type="text" value="{{userName}}" />
+          <p>Evaluate method using interpolation: Get Greeting Message - {{getGreetingMessage()}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoTwo" aria-expanded="true" aria-controls="collapseTwoTwo">
+        <span><code>[PropertyBinding]</code></span>
+      </button>
+    </h2>
+    <div id="collapseTwoTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+        <div class="bindings">
+          <div>
+            <label for="userName">[value]</label>
+            <input type="text" id="userName" [value]="inputValue" />
+          </div>
+          <div>
+            <label for="alt-userName">bind-value</label>
+            <input type="text" id="alt-username" bind-value="inputValue" />
+          </div>
+          <div>
+            <label>[src]</label>
+            <img [src]="imgsrc">
+          </div>
+          <div>
+            <label>[disabled] input</label>
+            <input [value]="inputValue" [disabled]="true" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeThree" aria-expanded="false" aria-controls="collapseThreeThree">
+        <span><code>[class]</code></span>
+      </button>
+    </h2>
+    <div id="collapseThreeThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+        <div class="bindings">
+          <div>
+            <p [class]="txtGreen">Sample Text for Class Binding</p>
+          </div>
+          <div>
+            <p [class]="[txtGreen, txtLower]">Sample Text for multiple css class Binding</p>
+          </div>
+          <div>
+            <p [class]="'txt-red txt-upper'">Sample Text for alternate css class class Binding</p>
+          </div>
+          <div>
+            <p [class]="getCssClass()">Sample Text for Class Binding using method</p>
+          </div>
+          <div>
+            <p [class]="hasError ? 'txt-red' : 'txt-green'">Sample Text for Class Binding using conditional statement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourFour" aria-expanded="false" aria-controls="collapseFourFour">
+        <span><code>(event)</code></span>
+      </button>
+    </h2>
+    <div id="collapseFourFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Click event demo</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+              <button type="submit" class="btn btn-outline-primary btn-sm" (click)="onButtonClick()">Click Here!</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10">
+              <p>Counter value {{count}}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Keyup event demo</p>
+            </div>
+            <input type="text" id="keyUpText" (keyup)="onKeyUp($event)" />
+          </div>
+          <div class="row">
+            <p [class]="txtUpper">{{textValue}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveFive" aria-expanded="false" aria-controls="collapseFiveFive">
+        <span><code>[(ngModel)]</code></span>
+      </button>
+    </h2>
+    <div id="collapseFiveFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+        <div class="bindings">
+          <div class="row form-group">
+            <div class="col-sm-2">
+              <label for="name">Name</label>
+            </div>
+            <div class="col-sm-4">
+              <input type="text" id="name" [(ngModel)]="userModel.name" />
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-sm-2">
+              <label for="email">E-mail</label>
+            </div>
+            <div class="col-sm-4">
+              <input type="text" id="email" [(ngModel)]="userModel.emailId" />
+            </div>
+          </div>
+          <div class="row form-group">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-4">
+              <button type="submit" class="btn btn-secondary" (click)="onSave()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

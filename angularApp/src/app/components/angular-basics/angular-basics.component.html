@@ -1,0 +1,81 @@
+
+<div class="container flex">
+  <div class="row flex">
+    <div class="col-xl-6">
+      <p>
+        <strong><h6 class="app-title">Data binding and Template Reference Variables</h6></strong>
+      </p>
+      <div class="bd-example">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <code>{{[(<span>Data binding</span>)]}}</code>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <app-data-binding></app-data-binding>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <code>#<span>TemplateReferenceVariable</span></code>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <app-template-reference></app-template-reference>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <code>#<span>TemplateReferenceVariable</span></code>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <app-template-reference></app-template-reference>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <p>
+        <strong><h6 class="app-title">Structural Directives</h6></strong>
+      </p>
+      <!-- <img src="https://picsum.photos/500/300?random=1"> -->
+      <app-structural-directives></app-structural-directives>
+    </div>
+  </div>
+  <div class="row flex"><br/></div>
+  <div class="row flex">
+    <div class="col-xl-6">
+      <div>
+        <strong><h6 class="app-title">Pipes in Angular</h6></strong>
+        <p>This is an example of a conversation which has extensive usage of pipes</p>
+        <app-pipes-in-angular></app-pipes-in-angular>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div>
+        <strong><h6 class="app-title">Attribute Directives</h6></strong>
+        <app-attribute-directives></app-attribute-directives>
+      </div>
+    </div>
+  </div>
+  <div class="row flex">
+    <div class="col-xl-12">
+      <div>
+        <strong><h6 class="app-title">Pass data between components</h6></strong>
+        <app-data-exchange></app-data-exchange>
+      </div>
+    </div>
+  </div>
+</div>

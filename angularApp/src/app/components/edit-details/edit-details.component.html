@@ -1,0 +1,49 @@
+<hr/>
+<p>
+  <strong><h5 class="app-title">{{ !disableForm ? 'Edit Employee' : 'Employee Details'}}</h5></strong>
+  <!-- <strong><h5 *ngIf="disableForm" class="app-title">Employee Details</h5></strong> -->
+</p>
+<hr/>
+<p><strong><h6>Total Employee count : {{employeeCount}}</h6></strong></p>
+<form class="row g-3" >
+  <div class="col-md-6">
+    <label for="inputfirstName" class="form-label" #selectLabel>Firstname</label>
+    <input type="text" class="form-control" id="inputfirstName" [(ngModel)]="employee.firstName" [ngModelOptions]="{ standalone:true }" [disabled]="disableForm">
+  </div>
+  <div class="col-md-6">
+    <label for="inputlastName" class="form-label" #selectLabel>Lastname</label>
+    <input type="text" class="form-control" id="inputlastName" [(ngModel)]="employee.lastName" [ngModelOptions]="{ standalone:true }" [disabled]="disableForm">
+  </div>
+  <div class="col-md-6">
+    <label for="inputSalary" class="form-label" #selectLabel>Salary</label>
+    <div class="input-group mb-3">
+      <!-- <span class="input-group-text" id="basic-addon1">$</span> -->
+      <input type="text" class="form-control" id="inputSalary" placeholder="" [(ngModel)]="employee.salary" [ngModelOptions]="{ standalone:true }" [disabled]="disableForm">
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="inputDepartment" class="form-label" #selectLabel>Department</label>
+    <select id="inputDepartment" class="form-select" [(ngModel)]="employee.department" [ngModelOptions]="{ standalone:true }" [disabled]="disableForm">
+      <option selected>Choose...</option>
+      <option *ngFor="let dept of departments" [ngValue]="dept">{{dept}}</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label" #selectLabel>City</label>
+    <input type="text" class="form-control" id="inputCity" [(ngModel)]="employee.location.city" [ngModelOptions]="{ standalone:true }" [disabled]="disableForm">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label" #selectLabel>State</label>
+    <select id="inputState" class="form-select" [(ngModel)]="employee.location.state" [ngModelOptions]="{ standalone:true }" [disabled]="disableForm">
+      <option selected>Choose...</option>
+      <option *ngFor="let item of states" [ngValue]="item.stateCode">{{item.state}}</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label" #selectLabel>Zip</label>
+    <input type="text" class="form-control" id="inputZip" [(ngModel)]="employee.location.zipCode" [ngModelOptions]="{ standalone:true }" [disabled]="disableForm">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-outline-primary btn-lg" (click)="onSave()" [disabled]="disableForm">Save</button>
+  </div>
+</form>

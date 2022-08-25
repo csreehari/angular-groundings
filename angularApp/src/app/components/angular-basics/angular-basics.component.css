@@ -1,0 +1,15 @@
+.bd-example {
+  /* width: 50% !important; */
+  /* padding: 1.0rem; */
+  margin: 0;
+  border-width: 1px;
+  box-sizing: border-box;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.app-title {
+  padding: 1.0em;
+  font-weight: 900;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
